@@ -3,611 +3,290 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>SK Hujaifa | Thumbnail Designer</title>
-
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-
+<title>SK Hujaifa | Portfolio</title>
 <style>
-
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-scroll-behavior:smooth;
-font-family:'Poppins',sans-serif;
-}
-
-body{
-background:#0d1117;
-color:white;
-}
-
-header{
-position:fixed;
-top:0;
-left:0;
-width:100%;
-padding:18px 10%;
-background:rgba(13,17,23,.95);
-display:flex;
-justify-content:space-between;
-align-items:center;
-backdrop-filter:blur(10px);
-z-index:1000;
-}
-
-.logo{
-font-size:26px;
-font-weight:700;
-color:#58a6ff;
-}
-
-nav a{
-color:white;
-text-decoration:none;
-margin-left:25px;
-transition:.3s;
-}
-
-nav a:hover{
-color:#58a6ff;
-}
-
+*{margin:0;padding:0;box-sizing:border-box;font-family:Arial,sans-serif;}
+body{background:#f4f4f4;color:#333;line-height:1.6;}
+header{background:#222;color:#fff;padding:15px 8%;display:flex;justify-content:space-between;align-items:center;}
+header h2{font-size:24px;}
+nav a{color:#fff;text-decoration:none;margin-left:20px;}
+nav a:hover{color:#00bcd4;}
 .hero{
-height:100vh;
+height:90vh;
 display:flex;
 justify-content:center;
 align-items:center;
 text-align:center;
+background:linear-gradient(135deg,#00bcd4,#2196f3);
+color:white;
 padding:20px;
-background:linear-gradient(135deg,#0d1117,#161b22);
 }
-
-.hero-content h3{
-font-size:25px;
-font-weight:400;
-}
-
-.hero-content h1{
-font-size:65px;
-margin:15px 0;
-color:#58a6ff;
-}
-
-.hero-content p{
-max-width:650px;
-margin:auto;
-font-size:18px;
-line-height:1.8;
-color:#c9d1d9;
-}
-
+.hero h1{font-size:48px;}
+.hero p{font-size:18px;margin:15px 0;}
 .btn{
 display:inline-block;
-margin-top:30px;
-padding:14px 35px;
-background:#58a6ff;
-color:white;
+padding:12px 25px;
+background:white;
+color:#2196f3;
 text-decoration:none;
-border-radius:40px;
-font-weight:600;
-transition:.3s;
+border-radius:5px;
+font-weight:bold;
 }
-
-.btn:hover{
-transform:translateY(-5px);
-background:#1f6feb;
-}
-
-section{
-padding:90px 10%;
-}
-
-.section-title{
-text-align:center;
-font-size:40px;
-margin-bottom:50px;
-color:#58a6ff;
-}
-
-.about{
+.btn:hover{background:#eee;}
+section{padding:60px 8%;}
+h2{text-align:center;margin-bottom:20px;}
+.about p{text-align:center;max-width:700px;margin:auto;}
+.skills{
 display:grid;
-grid-template-columns:1fr 1fr;
-gap:50px;
-align-items:center;
+grid-template-columns:repeat(auto-fit,minmax(140px,1fr));
+gap:15px;
+margin-top:30px;
 }
-
-.profile-box{
-display:flex;
-justify-content:center;
-}
-
-.profile-box img{
-width:300px;
-height:300px;
-border-radius:50%;
-border:6px solid #58a6ff;
-object-fit:cover;
-}
-
-.about-text h2{
-font-size:35px;
-margin-bottom:20px;
-}
-
-.about-text p{
-font-size:17px;
-line-height:1.9;
-color:#c9d1d9;
-}
-
-@media(max-width:768px){
-
-header{
-padding:15px 6%;
-}
-
-.hero-content h1{
-font-size:42px;
-}
-
-.about{
-grid-template-columns:1fr;
+.skill{
+background:white;
+padding:20px;
 text-align:center;
+border-radius:8px;
+box-shadow:0 2px 8px rgba(0,0,0,.1);
 }
-
-.profile-box img{
-width:220px;
-height:220px;
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+gap:15px;
+margin-top:25px;
 }
-
+.gallery img{
+width:100%;
+height:150px;
+object-fit:cover;
+border-radius:8px;
 }
-
+.contact{
+background:#fff;
+border-radius:10px;
+padding:30px;
+box-shadow:0 2px 10px rgba(0,0,0,.1);
+}
+.contact input,
+.contact textarea{
+width:100%;
+padding:12px;
+margin:10px 0;
+border:1px solid #ccc;
+border-radius:5px;
+}
+.contact button{
+background:#2196f3;
+color:white;
+padding:12px 20px;
+border:none;
+border-radius:5px;
+cursor:pointer;
+}
+.contact button:hover{
+background:#1976d2;
+}
+footer{
+background:#222;
+color:white;
+text-align:center;
+padding:20px;
+margin-top:40px;
+}
+@media(max-width:768px){
+header{
+flex-direction:column;
+}
+nav{
+margin-top:10px;
+}
+.hero h1{
+font-size:34px;
+}
+}
 </style>
-
 </head>
-
 <body>
 
 <header>
-
-<div class="logo">
-SK Hujaifa
-</div>
-
+<h2>SK Hujaifa</h2>
 <nav>
-
-<a href="#">Home</a>
-
 <a href="#about">About</a>
-
 <a href="#skills">Skills</a>
-
-<a href="#portfolio">Portfolio</a>
-
+<a href="#gallery">Gallery</a>
 <a href="#contact">Contact</a>
-
 </nav>
-
 </header>
 
 <section class="hero">
-
-<div class="hero-content">
-
-<h3>Hello, I'm</h3>
-
-<h1>SK Hujaifa</h1>
-
-<p>
-
-Professional Thumbnail Designer passionate about creating eye-catching YouTube thumbnails that increase clicks and grow channels.
-
-</p>
-
-<a href="#contact" class="btn">
-
-Hire Me
-
-</a>
-
+<div>
+<h1>Hello, I'm SK Hujaifa</h1>
+<p>Web Learner | Creative Thinker | Nature Lover</p>
+<a href="#contact" class="btn">Hire Me</a>
 </div>
-
 </section>
 
-<section id="about">
-
-<h2 class="section-title">
-
-About Me
-
-</h2>
-
-<div class="about">
-
-<div class="profile-box">
-
-<img src="https://via.placeholder.com/300" alt="Profile">
-
-</div>
-
-<div class="about-text">
-
-<h2>
-
-Creative Thumbnail Designer
-
-</h2>
-
+<section id="about" class="about">
+<h2>About Me</h2>
 <p>
-
-I'm SK Hujaifa, a passionate Thumbnail Designer. I love creating modern, attractive and high-converting YouTube thumbnails. My goal is to help creators get more clicks through professional designs.
-
+I'm SK Hujaifa, passionate about web development, creativity,
+and learning modern technologies. I enjoy building clean,
+responsive websites with simple and attractive designs.
 </p>
-
-</div>
-
-</div>
-
 </section>
+
 <section id="skills">
-
-<h2 class="section-title">
-My Skills
-</h2>
-
-<div class="skills-container">
-
-<div class="skill-card">
-<h3>🎨 Thumbnail Design</h3>
-<p>Creative and high CTR YouTube thumbnail designs.</p>
+<h2>My Skills</h2>
+<div class="skills">
+<div class="skill">HTML</div>
+<div class="skill">CSS</div>
+<div class="skill">Responsive Design</div>
+<div class="skill">Creative Writing</div>
 </div>
-
-<div class="skill-card">
-<h3>⚡ Fast Delivery</h3>
-<p>Quick turnaround with quality work.</p>
-</div>
-
-<div class="skill-card">
-<h3>📱 Mobile Friendly</h3>
-<p>Designs optimized for every screen.</p>
-</div>
-
-<div class="skill-card">
-<h3>💡 Creative Ideas</h3>
-<p>Unique concepts to attract more viewers.</p>
-</div>
-
-</div>
-
 </section>
-
-<section id="services">
-
-<h2 class="section-title">
-My Services
-</h2>
-
-<div class="skills-container">
-
-<div class="skill-card">
-<h3>YouTube Thumbnails</h3>
-<p>Professional thumbnails for every niche.</p>
-</div>
-
-<div class="skill-card">
-<h3>Gaming Thumbnails</h3>
-<p>Modern gaming and esports thumbnail design.</p>
-</div>
-
-<div class="skill-card">
-<h3>Tech Thumbnails</h3>
-<p>Clean and premium technology thumbnails.</p>
-</div>
-
-<div class="skill-card">
-<h3>Islamic Thumbnails</h3>
-<p>Beautiful thumbnails for Islamic content.</p>
-</div>
-
-</div>
-
-</section>
-
-<section id="portfolio">
-
-<h2 class="section-title">
-Portfolio
-</h2>
-
-<div class="portfolio-grid">
-
-<div class="portfolio-card">
-<h3>Project 1</h3>
-<p>Coming Soon</p>
-</div>
-
-<div class="portfolio-card">
-<h3>Project 2</h3>
-<p>Coming Soon</p>
-</div>
-
-<div class="portfolio-card">
-<h3>Project 3</h3>
-<p>Coming Soon</p>
-</div>
-
-<div class="portfolio-card">
-<h3>Project 4</h3>
-<p>Coming Soon</p>
-</div>
-
-</div>
-
-</section>
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SK Hujaifa | Portfolio</title>
 <style>
-
-.skills-container{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-gap:25px;
-}
-
-.skill-card{
-background:#161b22;
-padding:25px;
-border-radius:15px;
+*{margin:0;padding:0;box-sizing:border-box;font-family:Arial,sans-serif;}
+body{background:#f4f4f4;color:#333;line-height:1.6;}
+header{background:#222;color:#fff;padding:15px 8%;display:flex;justify-content:space-between;align-items:center;}
+header h2{font-size:24px;}
+nav a{color:#fff;text-decoration:none;margin-left:20px;}
+nav a:hover{color:#00bcd4;}
+.hero{
+height:90vh;
+display:flex;
+justify-content:center;
+align-items:center;
 text-align:center;
-transition:.3s;
-border:1px solid #30363d;
+background:linear-gradient(135deg,#00bcd4,#2196f3);
+color:white;
+padding:20px;
 }
-
-.skill-card:hover{
-transform:translateY(-8px);
-border-color:#58a6ff;
-}
-
-.portfolio-grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-gap:25px;
-}
-
-.portfolio-card{
-background:#161b22;
-padding:40px 20px;
-border-radius:15px;
-text-align:center;
-border:1px solid #30363d;
-transition:.3s;
-}
-
-.portfolio-card:hover{
-transform:scale(1.05);
-border-color:#58a6ff;
-}
-
-</style>
-<section id="contact">
-
-<h2 class="section-title">
-Contact Me
-</h2>
-
-<div class="contact-box">
-
-<h3>Let's Work Together 🚀</h3>
-
-<p>
-Need a professional YouTube Thumbnail?
-Let's create something amazing together.
-</p>
-
-<a class="contact-btn" href="mailto:your@email.com">
-📧 Email Me
-</a>
-
-<a class="contact-btn whatsapp" href="#">
-💬 WhatsApp
-</a>
-
-</div>
-
-</section>
-
-<footer>
-
-<h2>SK Hujaifa</h2>
-
-<p>Professional Thumbnail Designer</p>
-
-<p style="margin-top:10px;">
-© 2025 All Rights Reserved.
-</p>
-
-</footer>
-
-<style>
-
-.contact-box{
-max-width:700px;
-margin:auto;
-background:#161b22;
-padding:40px;
-border-radius:20px;
-text-align:center;
-border:1px solid #30363d;
-}
-
-.contact-box h3{
-font-size:32px;
-margin-bottom:20px;
-color:#58a6ff;
-}
-
-.contact-box p{
-color:#c9d1d9;
-line-height:1.8;
-margin-bottom:25px;
-}
-
-.contact-btn{
+.hero h1{font-size:48px;}
+.hero p{font-size:18px;margin:15px 0;}
+.btn{
 display:inline-block;
-margin:10px;
-padding:14px 28px;
-background:#58a6ff;
-color:white;
+padding:12px 25px;
+background:white;
+color:#2196f3;
 text-decoration:none;
-border-radius:50px;
+border-radius:5px;
 font-weight:bold;
-transition:.3s;
 }
-
-.contact-btn:hover{
-transform:translateY(-5px);
-background:#1f6feb;
+.btn:hover{background:#eee;}
+section{padding:60px 8%;}
+h2{text-align:center;margin-bottom:20px;}
+.about p{text-align:center;max-width:700px;margin:auto;}
+.skills{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(140px,1fr));
+gap:15px;
+margin-top:30px;
 }
-
-.whatsapp{
-background:#25D366;
-}
-
-.whatsapp:hover{
-background:#1ebc59;
-}
-
-footer{
-margin-top:80px;
-padding:40px;
-background:#161b22;
+.skill{
+background:white;
+padding:20px;
 text-align:center;
-border-top:1px solid #30363d;
+border-radius:8px;
+box-shadow:0 2px 8px rgba(0,0,0,.1);
 }
-
-footer h2{
-color:#58a6ff;
-margin-bottom:10px;
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+gap:15px;
+margin-top:25px;
 }
-
-</style>
-<style>
-
-/* Scroll Animation */
-
-.hidden{
-opacity:0;
-transform:translateY(50px);
-transition:all .8s ease;
+.gallery img{
+width:100%;
+height:150px;
+object-fit:cover;
+border-radius:8px;
 }
-
-.show{
-opacity:1;
-transform:translateY(0);
+.contact{
+background:#fff;
+border-radius:10px;
+padding:30px;
+box-shadow:0 2px 10px rgba(0,0,0,.1);
 }
-
-/* Scrollbar */
-
-::-webkit-scrollbar{
-width:10px;
+.contact input,
+.contact textarea{
+width:100%;
+padding:12px;
+margin:10px 0;
+border:1px solid #ccc;
+border-radius:5px;
 }
-
-::-webkit-scrollbar-track{
-background:#0d1117;
-}
-
-::-webkit-scrollbar-thumb{
-background:#58a6ff;
-border-radius:20px;
-}
-
-/* Selection */
-
-::selection{
-background:#58a6ff;
+.contact button{
+background:#2196f3;
 color:white;
-}
-
-/* Back To Top */
-
-#topBtn{
-position:fixed;
-bottom:25px;
-right:25px;
-display:none;
-background:#58a6ff;
-color:white;
+padding:12px 20px;
 border:none;
-width:50px;
-height:50px;
-border-radius:50%;
-font-size:22px;
+border-radius:5px;
 cursor:pointer;
-transition:.3s;
-box-shadow:0 0 20px rgba(88,166,255,.4);
 }
-
-#topBtn:hover{
-transform:scale(1.1);
-background:#1f6feb;
+.contact button:hover{
+background:#1976d2;
 }
-
+footer{
+background:#222;
+color:white;
+text-align:center;
+padding:20px;
+margin-top:40px;
+}
+@media(max-width:768px){
+header{
+flex-direction:column;
+}
+nav{
+margin-top:10px;
+}
+.hero h1{
+font-size:34px;
+}
+}
 </style>
+</head>
+<body>
 
-<button id="topBtn">↑</button>
+<header>
+<h2>SK Hujaifa</h2>
+<nav>
+<a href="#about">About</a>
+<a href="#skills">Skills</a>
+<a href="#gallery">Gallery</a>
+<a href="#contact">Contact</a>
+</nav>
+</header>
 
-<script>
+<section class="hero">
+<div>
+<h1>Hello, I'm SK Hujaifa</h1>
+<p>Web Learner | Creative Thinker | Nature Lover</p>
+<a href="#contact" class="btn">Hire Me</a>
+</div>
+</section>
 
-// Scroll Animation
+<section id="about" class="about">
+<h2>About Me</h2>
+<p>
+I'm SK Hujaifa, passionate about web development, creativity,
+and learning modern technologies. I enjoy building clean,
+responsive websites with simple and attractive designs.
+</p>
+</section>
 
-const hiddenElements=document.querySelectorAll("section");
-
-const observer=new IntersectionObserver((entries)=>{
-entries.forEach((entry)=>{
-if(entry.isIntersecting){
-entry.target.classList.add("show");
-}
-});
-});
-
-hiddenElements.forEach((el)=>{
-el.classList.add("hidden");
-observer.observe(el);
-});
-
-// Top Button
-
-let topBtn=document.getElementById("topBtn");
-
-window.onscroll=function(){
-
-if(document.body.scrollTop>300||document.documentElement.scrollTop>300){
-
-topBtn.style.display="block";
-
-}else{
-
-topBtn.style.display="none";
-
-}
-
-};
-
-topBtn.onclick=function(){
-
-window.scrollTo({
-
-top:0,
-
-behavior:"smooth"
-
-});
-
-};
-
-</script>
-
-</body>
-
-</html>
+<section id="skills">
+<h2>My Skills</h2>
+<div class="skills">
+<div class="skill">HTML</div>
+<div class="skill">CSS</div>
+<div class="skill">Responsive Design</div>
+<div class="skill">Creative Writing</div>
+</div>
+</section>
