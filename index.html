@@ -1,114 +1,118 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>SK Hujaifa | Thumbnail Designer</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="SK Hujaifa | Professional Thumbnail Designer">
+    <meta name="keywords" content="Thumbnail Designer, YouTube Thumbnail, Canva, Photoshop">
+    <meta name="author" content="SK Hujaifa">
 
-<style>
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Arial,sans-serif;
-}
+    <title>SK Hujaifa | Professional Thumbnail Designer</title>
 
-body{
-background:#0d1117;
-color:white;
-text-align:center;
-}
+    <link rel="stylesheet" href="style.css">
 
-.hero{
-padding:70px 20px;
-background:linear-gradient(135deg,#2563eb,#7c3aed);
-}
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
-.hero img{
-width:150px;
-height:150px;
-border-radius:50%;
-border:4px solid white;
-object-fit:cover;
-margin-bottom:20px;
-}
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 
-.hero h1{
-font-size:38px;
-}
-
-.hero p{
-font-size:20px;
-margin-top:10px;
-}
-
-.btn{
-display:inline-block;
-margin-top:25px;
-padding:12px 25px;
-background:white;
-color:#2563eb;
-text-decoration:none;
-border-radius:30px;
-font-weight:bold;
-}
-
-section{
-padding:50px 20px;
-}
-
-.card{
-background:#161b22;
-padding:20px;
-border-radius:15px;
-max-width:700px;
-margin:auto;
-}
-
-footer{
-padding:20px;
-background:#161b22;
-}
-</style>
-
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
 </head>
+
 <body>
 
-<div class="hero">
+    <!-- Loader -->
+    <div id="loader">
+        <div class="loader-circle"></div>
+    </div>
 
-<img src="https://via.placeholder.com/150" alt="Profile">
+    <!-- Back To Top -->
+    <button id="topBtn">
+        <i class="fas fa-arrow-up"></i>
+    </button>
 
-<h1>SK Hujaifa</h1>
+    <!-- Navbar -->
+    <header id="header">
 
-<p>Professional Thumbnail Designer</p>
+        <div class="logo">
+            SK Hujaifa
+        </div>
 
-<a href="#about" class="btn">About Me</a>
+        <nav>
 
-</div>
+            <ul id="menu">
 
-<section id="about">
+                <li><a href="#home">Home</a></li>
 
-<div class="card">
+                <li><a href="#about">About</a></li>
 
-<h2>About Me</h2>
+                <li><a href="#skills">Skills</a></li>
 
-<br>
+                <li><a href="#services">Services</a></li>
 
-<p>
-Hi! I'm SK Hujaifa, a passionate Thumbnail Designer.
-I create eye-catching YouTube thumbnails with modern
-and creative designs.
-</p>
+                <li><a href="#portfolio">Portfolio</a></li>
 
-</div>
+                <li><a href="#contact">Contact</a></li>
 
-</section>
+            </ul>
 
-<footer>
+        </nav>
 
-© 2025 SK Hujaifa
+        <div class="nav-buttons">
 
-</footer>
+            <button id="themeToggle">
+                🌙
+            </button>
 
-</body>
-</html>
+            <button id="languageToggle">
+                বাংলা
+            </button>
+
+        </div>
+
+    </header>
+
+    <!-- Hero Section -->
+
+    <section id="home" class="hero">
+
+        <div class="hero-content" data-aos="fade-right">
+
+            <h3>
+                👋 Welcome
+            </h3>
+
+            <h1>
+                SK Hujaifa
+            </h1>
+
+            <h2>
+                Professional Thumbnail Designer
+            </h2>
+
+            <p>
+                I create premium YouTube thumbnails that increase CTR and attract more viewers.
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="#contact" class="btn">
+                    Hire Me
+                </a>
+
+                <a href="#" class="btn outline" download>
+                    Download CV
+                </a>
+
+            </div>
+
+        </div>
+
+        <div class="hero-image" data-aos="zoom-in">
+
+            <img src="https://via.placeholder.com/450x500.png?text=Your+Photo" alt="Profile">
+
+        </div>
+
+    </section>
