@@ -144,149 +144,34 @@ responsive websites with simple and attractive designs.
 <div class="skill">Creative Writing</div>
 </div>
 </section>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>SK Hujaifa | Portfolio</title>
-<style>
-*{margin:0;padding:0;box-sizing:border-box;font-family:Arial,sans-serif;}
-body{background:#f4f4f4;color:#333;line-height:1.6;}
-header{background:#222;color:#fff;padding:15px 8%;display:flex;justify-content:space-between;align-items:center;}
-header h2{font-size:24px;}
-nav a{color:#fff;text-decoration:none;margin-left:20px;}
-nav a:hover{color:#00bcd4;}
-.hero{
-height:90vh;
-display:flex;
-justify-content:center;
-align-items:center;
-text-align:center;
-background:linear-gradient(135deg,#00bcd4,#2196f3);
-color:white;
-padding:20px;
-}
-.hero h1{font-size:48px;}
-.hero p{font-size:18px;margin:15px 0;}
-.btn{
-display:inline-block;
-padding:12px 25px;
-background:white;
-color:#2196f3;
-text-decoration:none;
-border-radius:5px;
-font-weight:bold;
-}
-.btn:hover{background:#eee;}
-section{padding:60px 8%;}
-h2{text-align:center;margin-bottom:20px;}
-.about p{text-align:center;max-width:700px;margin:auto;}
-.skills{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(140px,1fr));
-gap:15px;
-margin-top:30px;
-}
-.skill{
-background:white;
-padding:20px;
-text-align:center;
-border-radius:8px;
-box-shadow:0 2px 8px rgba(0,0,0,.1);
-}
-.gallery{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
-gap:15px;
-margin-top:25px;
-}
-.gallery img{
-width:100%;
-height:150px;
-object-fit:cover;
-border-radius:8px;
-}
-.contact{
-background:#fff;
-border-radius:10px;
-padding:30px;
-box-shadow:0 2px 10px rgba(0,0,0,.1);
-}
-.contact input,
-.contact textarea{
-width:100%;
-padding:12px;
-margin:10px 0;
-border:1px solid #ccc;
-border-radius:5px;
-}
-.contact button{
-background:#2196f3;
-color:white;
-padding:12px 20px;
-border:none;
-border-radius:5px;
-cursor:pointer;
-}
-.contact button:hover{
-background:#1976d2;
-}
-footer{
-background:#222;
-color:white;
-text-align:center;
-padding:20px;
-margin-top:40px;
-}
-@media(max-width:768px){
-header{
-flex-direction:column;
-}
-nav{
-margin-top:10px;
-}
-.hero h1{
-font-size:34px;
-}
-}
-</style>
-</head>
-<body>
+<section id="gallery">
+<h2>My Gallery</h2>
 
-<header>
-<h2>SK Hujaifa</h2>
-<nav>
-<a href="#about">About</a>
-<a href="#skills">Skills</a>
-<a href="#gallery">Gallery</a>
-<a href="#contact">Contact</a>
-</nav>
-</header>
-
-<section class="hero">
-<div>
-<h1>Hello, I'm SK Hujaifa</h1>
-<p>Web Learner | Creative Thinker | Nature Lover</p>
-<a href="#contact" class="btn">Hire Me</a>
+<div class="gallery">
+<img src="images/thumb1.jpg" alt="Thumbnail 1">
+<img src="images/thumb2.jpg" alt="Thumbnail 2">
+<img src="images/thumb3.jpg" alt="Thumbnail 3">
+<img src="images/thumb4.jpg" alt="Thumbnail 4">
+<img src="images/thumb5.jpg" alt="Thumbnail 5">
+<img src="images/thumb6.jpg" alt="Thumbnail 6">
 </div>
-</section>
 
-<section id="about" class="about">
-<h2>About Me</h2>
-<p>
-I'm SK Hujaifa, passionate about web development, creativity,
-and learning modern technologies. I enjoy building clean,
-responsive websites with simple and attractive designs.
-</p>
 </section>
+<section id="contact">
+<h2>Contact Me</h2>
 
-<section id="skills">
-<h2>My Skills</h2>
-<div class="skills">
-<div class="skill">HTML</div>
-<div class="skill">CSS</div>
-<div class="skill">Responsive Design</div>
-<div class="skill">Creative Writing</div>
+<div class="contact">
+<input type="text" placeholder="Your Name">
+<input type="email" placeholder="Your Email">
+<textarea rows="5" placeholder="Your Message"></textarea>
+<button>Send Message</button>
 </div>
+
 </section>
+
+<footer>
+<p>© 2025 SK Hujaifa | All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
